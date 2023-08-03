@@ -1,0 +1,48 @@
+:root {
+  --d-primary: #bb86fc;
+  --d-primary-variant: #3700b3;
+  --d-secondary: #03dac6;
+  --d-background: #121212;
+  --d-surface: #121212;
+  --d-error: #df6679;
+  --d-on-primary: #000;
+  --d-on-background: #e7e7e7;
+  --d-red: #e43f6f;
+  --d-white: #fff;
+}
+
+.dark {
+  background-color: var(--d-background);
+  color: var(--d-on-background);
+}
+
+.dark button {
+  background-color: var(--d-primary);
+  color: var(--d-on-primary);
+  border-color: var(--d-error);
+  cursor: pointer;
+}
+
+.dark button:hover {
+  background-color: var(--d-red);
+  color: var(--d-white);
+}
+
+.dark select {
+  background-color: var(--d-on-background);
+  color: var(--d-surface);
+  border-color: var(--d-primary);
+  cursor: pointer;
+}
+
+.dark input[type="radio"] {
+  cursor: pointer;
+}
+
+.dark label {
+  cursor: pointer;
+}
+
+.thead th {
+  text-align: start;
+}
