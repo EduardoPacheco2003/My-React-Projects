@@ -1,0 +1,48 @@
+{
+  "dulces": [
+    {
+      "id": 1,
+      "description": "Paleta Payaso",
+      "price": 100,
+      "img": "https://loremflickr.com/150/150/cat"
+    },
+    {
+      "id": 2,
+      "description": "Mazapan",
+      "price": 200,
+      "img": "https://loremflickr.com/150/150/cat"
+    },
+    {
+      "id": 3,
+      "description": "Tamborcito",
+      "price": 300,
+      "img": "https://loremflickr.com/150/150/cat"
+    },
+    {
+      "id": 4,
+      "description": "Gomitas",
+      "price": 400,
+      "img": "https://loremflickr.com/150/150/cat"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "administrador",
+      "user": "admin",
+      "email": "admin@dominio.com",
+      "password": "123",
+      "permissions": [
+        "analize"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Eduardo Pacheco Cruz",
+      "user": "Gogetaedu",
+      "email": "gogetaedu1@gmail.com",
+      "password": "Patolinpa.10",
+      "permissions": []
+    }
+  ]
+}
