@@ -1,0 +1,225 @@
+/* **********     Reset CSS     ********** */
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #f7df1e;
+  --second-color: #222;
+  --main-modal-color: rgba(247, 222, 30, 0.85);
+  --second-modal-color: rgba(34, 34, 34, 0.85);
+  --container-width: 1200px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* **************** Utopia fonts-sizes **************** */
+/* @link https://utopia.fyi/space/calculator?c=390,16,1.2,1200,20,1.25,5,2,1200&s=0.75|0.5|0.25,1.5|2|3|4|6,xl-2xl|m-l&g=s,l,xl,12 */
+
+:root {
+  --step--2: clamp(0.69rem, calc(0.64rem + 0.21vw), 0.8rem);
+  --step--1: clamp(0.83rem, calc(0.75rem + 0.33vw), 1rem);
+  --step-0: clamp(1rem, calc(0.88rem + 0.49vw), 1.25rem);
+  --step-1: clamp(1.2rem, calc(1.03rem + 0.72vw), 1.56rem);
+  --step-2: clamp(1.44rem, calc(1.19rem + 1.01vw), 1.95rem);
+  --step-3: clamp(1.73rem, calc(1.38rem + 1.41vw), 2.44rem);
+  --step-4: clamp(2.07rem, calc(1.6rem + 1.93vw), 3.05rem);
+  --step-5: clamp(2.49rem, calc(1.85rem + 2.62vw), 3.82rem);
+
+  --space-3xs: clamp(0.25rem, calc(0.22rem + 0.12vw), 0.31rem);
+  --space-2xs: clamp(0.5rem, calc(0.44rem + 0.25vw), 0.63rem);
+  --space-xs: clamp(0.75rem, calc(0.66rem + 0.37vw), 0.94rem);
+  --space-s: clamp(1rem, calc(0.88rem + 0.49vw), 1.25rem);
+  --space-m: clamp(1.5rem, calc(1.32rem + 0.74vw), 1.88rem);
+  --space-l: clamp(2rem, calc(1.76rem + 0.99vw), 2.5rem);
+  --space-xl: clamp(3rem, calc(2.64rem + 1.48vw), 3.75rem);
+  --space-2xl: clamp(4rem, calc(3.52rem + 1.98vw), 5rem);
+  --space-3xl: clamp(6rem, calc(5.28rem + 2.96vw), 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, calc(0.07rem + 0.74vw), 0.63rem);
+  --space-2xs-xs: clamp(0.5rem, calc(0.29rem + 0.86vw), 0.94rem);
+  --space-xs-s: clamp(0.75rem, calc(0.51rem + 0.99vw), 1.25rem);
+  --space-s-m: clamp(1rem, calc(0.58rem + 1.73vw), 1.88rem);
+  --space-m-l: clamp(1.5rem, calc(1.02rem + 1.98vw), 2.5rem);
+  --space-l-xl: clamp(2rem, calc(1.16rem + 3.46vw), 3.75rem);
+  --space-xl-2xl: clamp(3rem, calc(2.04rem + 3.95vw), 5rem);
+  --space-2xl-3xl: clamp(4rem, calc(2.31rem + 6.91vw), 7.5rem);
+
+  /* Custom pairs */
+
+  /* CONTAINER */
+  --grid-max-width: 77.5rem;
+  --grid-gutter: var(--space-s-l, clamp(1rem, calc(0.31rem + 2.82vw), 2.5rem));
+  --grid-columns: 12;
+}
+
+.u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+/* RESETS ************************** */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.aspect-ratio-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+h1 {
+  font-size: var(--step-4);
+  margin: 0;
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+h2 {
+  font-size: var(--step-3);
+  margin: 0;
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+h3 {
+  font-size: var(--step-2);
+  margin: 0;
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+h4 {
+  font-size: var(--step-1);
+  margin: 0;
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+h5 {
+  font-size: var(--step-0);
+  margin: 0;
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+a,
+p {
+  font-size: var(--step--1);
+  margin: 0;
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  line-height: 1.5;
+  font-size: var(--step--1);
+}
+
+.link {
+  color: #fff;
+}
+/* ------------------------------------- Utilities:  --------------------------------------------------- */
+/* ------------------------------------- Components:  --------------------------------------------------- */
+body.dark {
+  background-color: #222;
+  color: #ffd;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #f7df1e;
+  color: var(--second-color);
+}
+
+.header > h3 {
+  margin: 0;
+}
+
+.header > h3 > a {
+  margin: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+.header .menu a {
+  padding: 0.5rem;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+}
+
+/* ------------------------------------- Site Styles:  --------------------------------------------------- */
+.theme-container {
+  background-color: transparent;
+  border: none;
+}
+
+.theme-container img {
+  transition: filter 0.3s ease-out;
+}
+
+.theme-container img:hover {
+  cursor: pointer;
+  filter: invert(30%) blur(1px);
+}
+
+/* Medium Size  768px*/
+@media screen and (min-width: 48em) {
+  /* ------------------------------------- Utilities:  --------------------------------------------------- */
+  /* ------------------------------------- Components:  --------------------------------------------------- */
+
+  /* ------------------------------------- Site Styles:  --------------------------------------------------- */
+}
+
+/* Large Size  992px*/
+@media screen and (min-width: 62em) {
+  /* ------------------------------------- Utilities:  --------------------------------------------------- */
+  /* ------------------------------------- Components:  --------------------------------------------------- */
+  /* ------------------------------------- Site Styles:  --------------------------------------------------- */
+}
+
+/* XL Size 1200px */
+
+@media screen and (min-width: 75em) {
+  /* ------------------------------------- Utilities:  --------------------------------------------------- */
+  /* ------------------------------------- Components:  --------------------------------------------------- */
+  /* ------------------------------------- Site Styles:  --------------------------------------------------- */
+}
