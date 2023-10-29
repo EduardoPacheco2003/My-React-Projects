@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import RegisterPage from "./pages/RegisterPage";
 import ProtectedRoute from "./components/ProtectedRoute";
+import PostsPage from "./pages/PostsPage";
 
 function App() {
   const { auth } = useContext(AuthContext);
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/posts" element={<PostsPage />} />
           {/* Protegidas si estas logeado: */}
           <Route element={<ProtectedRoute isAllowed={!auth} />}>
             <Route path="/login" element={<LoginPage />} />

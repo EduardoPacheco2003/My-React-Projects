@@ -7,6 +7,7 @@ import lightThemeSvg from "../assets/sun.svg";
 const Header = () => {
   const { auth } = useContext(AuthContext);
   const [darkTheme, setDarkTheme] = useState(true);
+  // eslint-disable-next-line no-unused-vars
   const navigate = useNavigate();
 
   const changeTheme = (e) => {
